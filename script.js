@@ -99,7 +99,7 @@ const data = [
 			desc: "The menu's are hidden to minimize the cognitive load while looking at the screen. However, on first entering the website the category filtering menu is open to show the user that the videos can be filtered. On scroll the menu will automatically close itself."
 		}
 		]
-	}, {
+	}, /*{
 		user: "Jamie",
 		folder: "jamie",
 		sourceFile: "index.html",
@@ -119,7 +119,7 @@ const data = [
 			desc: "Every page gives the user a choice, but just one choice. This way any significant actions are carefully taken."
 		}
 		]
-	}, {
+	}, */{
 		user: "Dennis",
 		folder: "dennis",
 		sourceFile: "index.html",
@@ -469,7 +469,7 @@ const data = [
 			desc: ''
 		}
 		]
-	}, 
+	},
 	{
 		user: "Suus",
 		folder: "",
@@ -490,8 +490,8 @@ const data = [
 			desc: "I divided the form into 5 parts. Each part has it's own state. This way the user is never confronted with more input fields than necessary"
 		}
 		]
-	}, 
-	{
+	},
+	/*{
 		user: "Jelle",
 		folder: "",
 		sourceFile: "https://discover-movies.herokuapp.com/",
@@ -511,7 +511,7 @@ const data = [
 			desc: "The movie discovery is seperated in multiple steps. This way the user doesn't get overwhelmed."
 		}
 		]
-	}, 
+	},*/
 	{
 		user: "Stijn",
 		folder: "stijn",
@@ -532,7 +532,7 @@ const data = [
 			desc: "Unused elements are faded out"
 		}
 		]
-	}, 
+	},
 	{
 		user: 'vandijkstef',
 		folder: 'vandijkstef',
@@ -675,6 +675,27 @@ const RenderStuff = () => {
 	// 	document.body.appendChild(frame);
 	// });
 	const main = document.createElement('main');
+
+        const h2 = document.createElement( 'h2' ),
+                pOne = document.createElement( 'p' ),
+                pTwo = document.createElement( 'p' ),
+                pThree = document.createElement( 'p' )
+
+        h2.textContent = 'The principles of user interface'
+        pOne.textContent = 'Communication and Multimedia Design students’ solutions for creating intuitive User Interfaces.'
+        pTwo.textContent = `"To design is much more than simply to assemble, to order, or even to edit; it is to add value and
+                        meaning, to illuminate, to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and
+                                        perhaps even to amuse." - Paul Rand`
+        pThree.textContent = `Students from the minor "Web Design” at Amsterdam’s University of Applied Sciences were given the
+                        task to come up with intuitive and pleasurable user interface solutions. The students were given two
+                                        days to create a demo version of their solutions. These demo’s range from video players, to galleries,
+                                to booking interfaces and much more. The demo’s are based on Joshua Porter’s “19 Principles of User
+                                                        Interface Design”.`
+
+        main.appendChild( h2 )
+        main.appendChild( pOne )
+        main.appendChild( pTwo )
+        main.appendChild( pThree )
 
 	principals.forEach((principal) => {
 		// Create the section
