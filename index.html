@@ -4,11 +4,144 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Principals collected</title>
+	<link rel="stylesheet" href="styles/style.css">
+
+        <style>
+                body {
+                          font-family: "Open Sans", sans-serif;
+                }
+
+                .detail a {
+                          text-decoration: none;
+                          color: #000;
+                }
+
+                .detail {
+                        position: absolute;
+                        top: 4em;
+                        left: 50%;
+                        transform: translateX( -50% );
+                        z-index: 1;
+                          width: 100%;
+                          max-width: 70em;
+                          margin: auto;
+                          padding:2rem;
+                        background-color: #fff;
+                          box-sizing: border-box;
+                          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                                  0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+
+                .detail h3 {
+                          margin: 0;
+                          line-height: 1;
+                }
+                .detail h1 {
+                          font-size: 60px;
+                          margin-bottom: 1.5rem;
+                          margin-top:2rem;
+                }
+
+                .detail iframe {
+                          background-color: #fff;
+                          width: 100%;
+                          height: 80vh;
+                          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+
+                .detail p {
+                          max-width: 30em;
+                          padding: 0;
+                          margin: 0;
+                          padding-bottom: 40px;
+                }
+
+                section div {
+                        position: relative;
+                        width: 300px;
+                        height: 300px;
+                }
+
+                [data-principles-index] section {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                }
+
+                .iframe-wrapper {
+                        width: 15em;
+                        height: 10em;
+                        padding: 0;
+                        overflow: hidden;
+                        display:  inline-block;
+                }
+
+                .iframe-wrapper iframe {
+                        pointer-events: none;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                }
+
+                div.open iframe {
+                        position: fixed;
+                        top: 7vh;
+                        left: 50%;
+                        width: 80vw;
+                        height: 80vh;
+                        z-index: 1;
+                        transform: translateX( -50% );
+                }
+
+                iframe {
+                        border: 1px solid black;
+                }
+        </style>
 
 	<script src="script.js"></script>
+
 </head>
 <body>
-	
+
+	<nav>
+		<ol>
+			<li><a href="#principle-1">Clarity is job #1</a></li>
+			<li><a href="#principle-2">Interfaces exist to enable interaction</a></li>
+			<li><a href="#principle-3">Conserve attention at all costs</a></li>
+			<li><a href="#principle-4">Keep users in control</a></li>
+			<li><a href="#principle-5">Direct manipulation is best</a></li>
+			<li><a href="#principle-6">One primary action per screen</a></li>
+			<li><a href="#principle-7">Keep secondary actions secondary</a></li>
+			<li><a href="#principle-8">Provide a natural next step</a></li>
+			<li><a href="#principle-9">Appearance follows behavior</a></li>
+			<li><a href="#principle-10">Consistency matters</a></li>
+			<li><a href="#principle-11">Strong visual hierarchies work best</a></li>
+			<li><a href="#principle-12">Smart organization reduces cognitive load</a></li>
+			<li><a href="#principle-13">Highlight, don't determine, with color</a></li>
+			<li><a href="#principle-14">Progressive disclosure</a></li>
+			<li><a href="#principle-15">Help people inline</a></li>
+			<li><a href="#principle-16">A crucial moment: the zero state</a></li>
+			<li><a href="#principle-17">Great design is invisible</a></li>
+			<li><a href="#principle-18">Build on other design disciplines</a></li>
+			<li><a href="#principle-19">Interfaces exist to be used</a></li>
+		</ol>
+	</nav>
+
+	<section class="detail">
+		<a href="#"> &ltrif; Back</a>
+		<h1>Project</h1>
+		<h3>Chanakarn Niyornram</h3>
+		<p>
+			Dit is een project van Chanakarn. Hij heeft lang over nagedacht en shit.
+		</p>
+		<section>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Cihr9OWsEuk" frameborder="0" allow="autoplay; encrypted-media"
+				allowfullscreen></iframe>
+		</section>
+	</section>
+
+
 </body>
 </html>
