@@ -390,7 +390,7 @@ const data = [
 	},
 	{
 		user: "Nour Bayard",
-		folder: "nour/opdracht1",
+		folder: "nour/opracht1",
 		sourceFile: "index.html",
 		repoUrl: "https://github.com/nourbayard/web-design/",
 		branch: "master",
