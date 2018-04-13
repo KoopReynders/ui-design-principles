@@ -279,6 +279,7 @@ const RenderStuff = () => {
 	principals.forEach((principal) => {
 		// Create the section
 		const section = document.createElement('section');
+                section.setAttribute( 'data-principles-index', principal.id )
 
 		// Add the title
 		const title = document.createElement('h1');
@@ -292,12 +293,14 @@ const RenderStuff = () => {
 
 		// Add a section for the items
 		const framesSection = document.createElement('section');
-		data.forEach((item) => {
+		data.forEach((item, i) => {
 			item.principals.forEach((itemPrincipal) => {
 				if (itemPrincipal.id === principal.id) {
+
 					const frame = document.createElement('iframe');
 					const div = document.createElement('div');
 					div.classList.add('iframe-wrapper')
+                                        div.setAttribute( 'data-index', i )
 					let src = `${item.sourceFile}`;
 					if (item.folder.length > 0) {
 						src = `${item.folder}/` + src;
@@ -314,7 +317,76 @@ const RenderStuff = () => {
 	});
 }
 
+function handleIframeEvents() {
+
+        const iframes = document.querySelectorAll( 'section .iframe-wrapper' )
+
+        console.log( iframes )
+
+        iframes.forEach( el => {
+
+                el.addEventListener( 'click', openIframe )
+
+        } )
+
+}
+
+function openIframe() {
+
+        const el = parseInt( this.getAttribute( 'data-index' ) ),
+                principleIndex = parseInt( this.parentNode.parentNode.getAttribute( 'data-principles-index' ) ),
+                principle = principals[ principleIndex ],
+                desc = data[ el ].principals.filter( l => l.id === principle.id ),
+                section = document.createElement( 'section' ),
+                a = document.createElement( 'a' ),
+                h1 = document.createElement( 'h1' ),
+                h3 = document.createElement( 'h3' ),
+                p = document.createElement( 'p' ),
+                secondSection = document.createElement( 'section' ),
+                iframe = document.createElement( 'iframe' )
+
+        a.setAttribute( 'href', '#' )
+        a.textContent = '<  Back'
+        a.addEventListener( 'click', destroyIframe )
+
+        h1.textContent = 'Project'
+        h3.textContent = data[ el ].user
+        p.textContent = desc.desc
+
+        if ( data[ el ].sourceFile.includes( 'http' ) ) {
+
+                iframe.setAttribute( 'src', data[ el ].sourceFile )
+
+        } else {
+
+                iframe.setAttribute( 'src', `${data[ el ].folder}/${data[ el ].sourceFile}` )
+
+        }
+
+        secondSection.appendChild( iframe )
+        section.classList.add( 'detail' )
+
+        section.appendChild( a )
+        section.appendChild( h1 )
+        section.appendChild( h3 )
+        section.appendChild( p )
+        section.appendChild( secondSection )
+
+        document.body.appendChild( section )
+
+}
+
+function destroyIframe() {
+
+        const section = document.querySelector( '.detail' ),
+                a = section.querySelector( 'a' )
+
+        a.removeEventListener( 'click', destroyIframe )
+        section.remove()
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	RenderStuff();
-	console.log('hi');
+	handleIframeEvents()
 });

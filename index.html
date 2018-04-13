@@ -4,11 +4,104 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Principals collected</title>
+
+        <style>
+                body {
+                          font-family: "Open Sans", sans-serif;
+                }
+
+                .detail a {
+                          text-decoration: none;
+                          color: #000;
+                }
+
+                .detail {
+                        position: absolute;
+                        top: 4em;
+                        left: 50%;
+                        transform: translateX( -50% );
+                        z-index: 1;
+                          width: 100%;
+                          max-width: 70em;
+                          margin: auto;
+                          padding:2rem;
+                        background-color: #fff;
+                          box-sizing: border-box;
+                          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                                  0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+
+                .detail h3 {
+                          margin: 0;
+                          line-height: 1;
+                }
+                .detail h1 {
+                          font-size: 60px;
+                          margin-bottom: 1.5rem;
+                          margin-top:2rem;
+                }
+
+                .detail iframe {
+                          background-color: #fff;
+                          width: 100%;
+                          height: 80vh;
+                          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+
+                .detail p {
+                          max-width: 30em;
+                          padding: 0;
+                          margin: 0;
+                          padding-bottom: 40px;
+                }
+
+                section div {
+                        position: relative;
+                        width: 300px;
+                        height: 300px;
+                }
+
+                [data-principles-index] section {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                }
+
+                .iframe-wrapper {
+                        width: 15em;
+                        height: 10em;
+                        padding: 0;
+                        overflow: hidden;
+                        display:  inline-block;
+                }
+
+                .iframe-wrapper iframe {
+                        pointer-events: none;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                }
+
+                div.open iframe {
+                        position: fixed;
+                        top: 7vh;
+                        left: 50%;
+                        width: 80vw;
+                        height: 80vh;
+                        z-index: 1;
+                        transform: translateX( -50% );
+                }
+
+                iframe {
+                        border: 1px solid black;
+                }
+        </style>
 
 	<script src="script.js"></script>
 </head>
 <body>
-	
+
 </body>
 </html>
