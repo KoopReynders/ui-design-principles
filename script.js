@@ -136,10 +136,11 @@ const RenderStuff = () => {
 				if (itemPrincipal.id === principal.id) {
 					const frame = document.createElement('iframe');
 					frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
-					section.appendChild(frame);
+					framesSection.appendChild(frame);
 				};
 			})
 		});
+		section.appendChild(framesSection);
 
 		document.body.appendChild(section);
 	});
