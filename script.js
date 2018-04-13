@@ -15,6 +15,40 @@ const data = [
 			id: 9,
 			desc: 'Text about p9'
 		}]
+	},
+	{
+		user: 'vandijkstef',
+		folder: 'vandijkstef',
+		sourceFile: 'index.html',
+		repoUrl: '',
+		branch: '',
+		principals: [{
+			id: 1,
+			desc: 'Text about p1'
+		}, {
+			id: 3,
+			desc: 'Text about p4'
+		}, {
+			id: 9,
+			desc: 'Text about p9'
+		}]
+	},
+	{
+		user: 'vandijkstef',
+		folder: 'vandijkstef',
+		sourceFile: 'index.html',
+		repoUrl: '',
+		branch: '',
+		principals: [{
+			id: 1,
+			desc: 'Text about p1'
+		}, {
+			id: 3,
+			desc: 'Text about p4'
+		}, {
+			id: 9,
+			desc: 'Text about p9'
+		}]
 	}
 ]
 
@@ -120,6 +154,8 @@ const RenderStuff = () => {
 	// 	frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
 	// 	document.body.appendChild(frame);
 	// });
+	const main = document.createElement('main');
+	
 	principals.forEach((principal) => {
 		// Create the section
 		const section = document.createElement('section');
@@ -135,13 +171,17 @@ const RenderStuff = () => {
 			item.principals.forEach((itemPrincipal) => {
 				if (itemPrincipal.id === principal.id) {
 					const frame = document.createElement('iframe');
+					const div = document.createElement('div');
+					div.classList.add('iframe-wrapper')
 					frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
-					section.appendChild(frame);
+					div.appendChild(frame);
+					framesSection.appendChild(div);
 				};
 			})
 		});
-
-		document.body.appendChild(section);
+		section.appendChild(framesSection);
+		main.appendChild(section);
+		document.body.appendChild(main);
 	});
 }
 
