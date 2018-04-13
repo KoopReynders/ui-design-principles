@@ -122,7 +122,7 @@ const RenderStuff = () => {
 	// });
 	principals.forEach((principal) => {
 		// Create the section
-		const section = document.createElement('section');
+		const section = document.createElement('article');
 
 		// Add the title
 		const title = document.createElement('h1');
@@ -130,7 +130,6 @@ const RenderStuff = () => {
 		section.appendChild(title);
 
 		// Add a section for the items
-		const framesSection = document.createElement('section');
 		data.forEach((item) => {
 			item.principals.forEach((itemPrincipal) => {
 				if (itemPrincipal.id === principal.id) {
@@ -140,8 +139,8 @@ const RenderStuff = () => {
 				};
 			})
 		});
-
-		document.body.appendChild(section);
+    const main = document.querySelector('main');
+		main.appendChild(section);
 	});
 }
 
@@ -149,4 +148,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	RenderStuff();
 	console.log('hi');
 });
-
