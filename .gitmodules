@@ -1,0 +1,3 @@
+[submodule "vandijkstef"]
+	path = vandijkstef
+	url = https://github.com/vandijkstef/web-design.git
