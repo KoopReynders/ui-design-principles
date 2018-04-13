@@ -1,55 +1,4 @@
 const data = [
-	// {
-	// 	user: 'vandijkstef',
-	// 	folder: 'vandijkstef',
-	// 	sourceFile: 'index.html',
-	// 	repoUrl: '',
-	// 	branch: '',
-	// 	principals: [{
-	// 		id: 1,
-	// 		desc: 'Text about p1'
-	// 	}, {
-	// 		id: 4,
-	// 		desc: 'Text about p4'
-	// 	}, {
-	// 		id: 9,
-	// 		desc: 'Text about p9'
-	// 	}]
-	// },
-	// {
-	// 	user: 'vandijkstef',
-	// 	folder: 'vandijkstef',
-	// 	sourceFile: 'index.html',
-	// 	repoUrl: '',
-	// 	branch: '',
-	// 	principals: [{
-	// 		id: 1,
-	// 		desc: 'Text about p1'
-	// 	}, {
-	// 		id: 3,
-	// 		desc: 'Text about p4'
-	// 	}, {
-	// 		id: 9,
-	// 		desc: 'Text about p9'
-	// 	}]
-	// },
-	// {
-	// 	user: 'vandijkstef',
-	// 	folder: 'vandijkstef',
-	// 	sourceFile: 'index.html',
-	// 	repoUrl: '',
-	// 	branch: '',
-	// 	principals: [{
-	// 		id: 1,
-	// 		desc: 'Text about p1'
-	// 	}, {
-	// 		id: 3,
-	// 		desc: 'Text about p4'
-	// 	}, {
-	// 		id: 9,
-	// 		desc: 'Text about p9'
-	// 	}]
-	// }
 	{
 		user: "Chanakarn",
 		folder: "",
@@ -730,6 +679,7 @@ const RenderStuff = () => {
 	principals.forEach((principal) => {
 		// Create the section
 		const section = document.createElement('section');
+                section.setAttribute( 'id', `principle-${ principal.id }` )
                 section.setAttribute( 'data-principles-index', principal.id )
 
 		// Add the title
@@ -773,8 +723,6 @@ function handleIframeEvents() {
 
         const iframes = document.querySelectorAll( 'section .iframe-wrapper' )
 
-        console.log( iframes )
-
         iframes.forEach( el => {
 
                 el.addEventListener( 'click', openIframe )
@@ -795,7 +743,11 @@ function openIframe() {
                 h3 = document.createElement( 'h3' ),
                 p = document.createElement( 'p' ),
                 secondSection = document.createElement( 'section' ),
-                iframe = document.createElement( 'iframe' )
+                iframe = document.createElement( 'iframe' ),
+                bg = document.createElement( 'div' )
+
+        bg.classList.add( 'bg' )
+        bg.addEventListener( 'click', destroyIframe )
 
         a.setAttribute( 'href', '#' )
         a.textContent = '<  Back'
@@ -824,6 +776,7 @@ function openIframe() {
         section.appendChild( p )
         section.appendChild( secondSection )
 
+        document.body.appendChild( bg )
         document.body.appendChild( section )
 
 }
@@ -831,9 +784,13 @@ function openIframe() {
 function destroyIframe() {
 
         const section = document.querySelector( '.detail' ),
-                a = section.querySelector( 'a' )
+                a = section.querySelector( 'a' ),
+                bg = document.querySelector( '.bg' )
 
+        bg.removeEventListener( 'click', destroyIframe )
         a.removeEventListener( 'click', destroyIframe )
+
+        bg.remove()
         section.remove()
 
 }
