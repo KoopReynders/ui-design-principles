@@ -1,3 +1,18 @@
 [submodule "vandijkstef"]
 	path = vandijkstef
 	url = https://github.com/vandijkstef/web-design.git
+[submodule "chanakarn"]
+	path = chanakarn
+	url = https://github.com/niyorn/web-design
+[submodule "sam"]
+	path = sam
+	url = https://github.com/sam-guliker/web-design
+[submodule "max"]
+	path = max
+	url = https://github.com/vriesm060/web-design
+[submodule "james"]
+	path = james
+	url = https://github.com/Jamerrone/web-design
+[submodule "niels"]
+	path = niels
+	url = https://github.com/NielsFS/web-design
