@@ -1,54 +1,155 @@
 const data = [
+	// {
+	// 	user: 'vandijkstef',
+	// 	folder: 'vandijkstef',
+	// 	sourceFile: 'index.html',
+	// 	repoUrl: '',
+	// 	branch: '',
+	// 	principals: [{
+	// 		id: 1,
+	// 		desc: 'Text about p1'
+	// 	}, {
+	// 		id: 4,
+	// 		desc: 'Text about p4'
+	// 	}, {
+	// 		id: 9,
+	// 		desc: 'Text about p9'
+	// 	}]
+	// },
+	// {
+	// 	user: 'vandijkstef',
+	// 	folder: 'vandijkstef',
+	// 	sourceFile: 'index.html',
+	// 	repoUrl: '',
+	// 	branch: '',
+	// 	principals: [{
+	// 		id: 1,
+	// 		desc: 'Text about p1'
+	// 	}, {
+	// 		id: 3,
+	// 		desc: 'Text about p4'
+	// 	}, {
+	// 		id: 9,
+	// 		desc: 'Text about p9'
+	// 	}]
+	// },
+	// {
+	// 	user: 'vandijkstef',
+	// 	folder: 'vandijkstef',
+	// 	sourceFile: 'index.html',
+	// 	repoUrl: '',
+	// 	branch: '',
+	// 	principals: [{
+	// 		id: 1,
+	// 		desc: 'Text about p1'
+	// 	}, {
+	// 		id: 3,
+	// 		desc: 'Text about p4'
+	// 	}, {
+	// 		id: 9,
+	// 		desc: 'Text about p9'
+	// 	}]
+	// }
 	{
-		user: 'vandijkstef',
-		folder: 'vandijkstef',
-		sourceFile: 'index.html',
-		repoUrl: '',
-		branch: '',
-		principals: [{
+		user: "Chanakarn",
+		folder: "",
+		sourceFile: "https://portfolio-kuinychboq.now.sh/",
+		repoUrl: "https://github.com/niyorn/web-design",
+		branch: "master",
+		principals: [
+			{
+				id: 1,
+				desc: ""
+			},
+			{
+				id: 11,
+				desc: ""
+			},
+			{
+				id: 12,
+				desc: ""
+			}
+		]
+	}, {
+		user: "Sam",
+		folder: "sam",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/sam-guliker/web-design",
+		branch: "master",
+		principals: [
+		{
 			id: 1,
-			desc: 'Text about p1'
-		}, {
-			id: 4,
-			desc: 'Text about p4'
-		}, {
-			id: 9,
-			desc: 'Text about p9'
-		}]
-	},
-	{
-		user: 'vandijkstef',
-		folder: 'vandijkstef',
-		sourceFile: 'index.html',
-		repoUrl: '',
-		branch: '',
-		principals: [{
+			desc: "It's important to let the design explain itself itself."
+		},
+		{
+			id: 6,
+			desc: "Everyscreen got a primary action, this way it is simple to understand what is going on."
+		},
+		{
+			id: 10,
+			desc: "I'ts important to have a consistant page to help the user understand what is going on within the page."
+		}
+		]
+	}, {
+		user: "Max",
+		folder: "max",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/vriesm060/web-design",
+		branch: "master",
+		principals: [
+		{
 			id: 1,
-			desc: 'Text about p1'
-		}, {
-			id: 3,
-			desc: 'Text about p4'
-		}, {
-			id: 9,
-			desc: 'Text about p9'
-		}]
-	},
-	{
-		user: 'vandijkstef',
-		folder: 'vandijkstef',
-		sourceFile: 'index.html',
-		repoUrl: '',
-		branch: '',
-		principals: [{
+			desc: ""
+		},
+		{
+			id: 11,
+			desc: ""
+		},
+		{
+			id: 12,
+			desc: ""
+		}
+		]
+	}, {
+		user: "James",
+		folder: "james/dist",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/Jamerrone/web-design",
+		branch: "master",
+		principals: [
+		{
 			id: 1,
-			desc: 'Text about p1'
-		}, {
-			id: 3,
-			desc: 'Text about p4'
-		}, {
-			id: 9,
-			desc: 'Text about p9'
-		}]
+			desc: "Normally I try to build clarity using icons, buttons or labels. However, this time I tried to explain my unusual interface using animations."
+		},
+		{
+			id: 6,
+			desc: "I mainly have two screens, each having there own primary action and multiple secondary actions. For example, on the homepage/overview page, users can see and scroll trough multiples images, when clicked they expose more information about themselves in a separated detail view."
+		},
+		{
+			id: 11,
+			desc: "The main content of my concept are images witch by nature atracht way more attention to themselfs then text elements do. They are big, fun and full of colors. In the end, I chose to keep my main focal points on theimages themselfs while also tring to call attention to the headers."
+		}
+		]
+	}, {
+		user: "Niels",
+		folder: "niels",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/NielsFS/web-design",
+		branch: "Videmo-versie-2",
+		principals: [
+		{
+			id: 1,
+			desc: "A clean interface that focusses the user on the content. The page is designed to not be cluttered."
+		},
+		{
+			id: 10,
+			desc: "Fully responsive page so that the content is always presented the same way. When opening menu's, the content scales and resizes"
+		},
+		{
+			id: 12,
+			desc: "The menu's are hidden to minimize the cognitive load while looking at the screen. However, on first entering the website the category filtering menu is open to show the user that the videos can be filtered. On scroll the menu will automatically close itself."
+		}
+		]
 	}
 ]
 
@@ -197,7 +298,11 @@ const RenderStuff = () => {
 					const frame = document.createElement('iframe');
 					const div = document.createElement('div');
 					div.classList.add('iframe-wrapper')
-					frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
+					let src = `${item.sourceFile}`;
+					if (item.folder.length > 0) {
+						src = `${item.folder}/` + src;
+					}
+					frame.setAttribute('src', src);
 					div.appendChild(frame);
 					framesSection.appendChild(div);
 				};
