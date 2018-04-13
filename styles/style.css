@@ -1,12 +1,25 @@
 /* iframe and item component */
+
+* {
+    box-sizing: border-box;
+}
+
 body * {
     font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    width: 80vw;
-    margin: 0 auto;
+    max-width: 100vw;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main {
+    width: 60vw;
 }
 
 .item h1 {
@@ -52,6 +65,7 @@ body {
     padding: 2rem;
     box-sizing: border-box;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
 }
 
 .detail h3 {
@@ -77,4 +91,27 @@ body {
     padding: 0;
     margin: 0;
     padding-bottom: 40px;
+}
+
+/* navigation component */
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    margin-top: .5rem;
+}
+
+nav {
+    width: 20vw;
+    position: sticky;
+    margin-top: 12rem;
 }
