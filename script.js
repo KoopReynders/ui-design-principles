@@ -134,9 +134,14 @@ const RenderStuff = () => {
 		data.forEach((item) => {
 			item.principals.forEach((itemPrincipal) => {
 				if (itemPrincipal.id === principal.id) {
-					const frame = document.createElement('iframe');
+					const frame = document.createElement('iframe'),
+                                                div = document.createElement( 'div' )
+
+                                        div.classList.add( 'iframe-wrapper' )
 					frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
-					section.appendChild(frame);
+
+                                        div.appendChild( frame )
+					section.appendChild( div );
 				};
 			})
 		});
@@ -145,8 +150,27 @@ const RenderStuff = () => {
 	});
 }
 
+function handleIframeEvents() {
+
+        const iframes = document.querySelectorAll( 'section .iframe-wrapper' )
+
+        console.log( iframes )
+
+        iframes.forEach( el => {
+
+                el.addEventListener( 'click', openIframe )
+
+        } )
+
+}
+
+function openIframe() {
+
+        console.log( 'click' )
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	RenderStuff();
-	console.log('hi');
+	handleIframeEvents()
 });
-
