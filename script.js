@@ -120,6 +120,8 @@ const RenderStuff = () => {
 	// 	frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
 	// 	document.body.appendChild(frame);
 	// });
+	const main = document.createElement('main');
+	
 	principals.forEach((principal) => {
 		// Create the section
 		const section = document.createElement('section');
@@ -141,8 +143,8 @@ const RenderStuff = () => {
 			})
 		});
 		section.appendChild(framesSection);
-
-		document.body.appendChild(section);
+		main.appendChild(section);
+		document.body.appendChild(main);
 	});
 }
 
