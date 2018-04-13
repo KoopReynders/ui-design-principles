@@ -171,8 +171,11 @@ const RenderStuff = () => {
 			item.principals.forEach((itemPrincipal) => {
 				if (itemPrincipal.id === principal.id) {
 					const frame = document.createElement('iframe');
+					const div = document.createElement('div');
+					div.classList.add('iframe-wrapper')
 					frame.setAttribute('src', `${item.folder}/${item.sourceFile}`);
-					framesSection.appendChild(frame);
+					div.appendChild(frame);
+					framesSection.appendChild(div);
 				};
 			})
 		});
