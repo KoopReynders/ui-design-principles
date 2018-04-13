@@ -150,6 +150,457 @@ const data = [
 			desc: "The menu's are hidden to minimize the cognitive load while looking at the screen. However, on first entering the website the category filtering menu is open to show the user that the videos can be filtered. On scroll the menu will automatically close itself."
 		}
 		]
+	}, {
+		user: "Jamie",
+		folder: "jamie",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/jajan20/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "By keeping my interface clean and simple users can find directly what they need. The logo is big, with a name whichs tells exactly what the interface is used for."
+		},
+		{
+			id: 6,
+			desc: "By making the decesion making buttons big and stand out with color. They will attract the attention of the user."
+		},
+		{
+			id: 11,
+			desc: "Every page gives the user a choice, but just one choice. This way any significant actions are carefully taken."
+		}
+		]
+	}, {
+		user: "Dennis",
+		folder: "dennis",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/dipsaus9/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "The purpose of the page should be clear at first view. "
+		},
+		{
+			id: 6,
+			desc: "Each state at the website has one primary function and one action only."
+		},
+		{
+			id: 8,
+			desc: ""
+		}
+		]
+	}, {
+		user: "Yoeri",
+		folder: "yoeri/src",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/yoeripasmans/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "Build clarity with using a clean interface with existing patterns of a gallery. Users recongize these patterns and easier understand the interface of the gallery."
+		},
+		{
+			id: 11,
+			desc: "Using different font weights and colors with the usage of correct styling, I'm trying to create a strong visual hierarchy."
+		},
+		{
+			id: 14,
+			desc: "By not showing all of the details of the images in the gallery, but only on the when the user hover on that image, the gallery don't gets cluttered and stays clean. Therefore the interaction with the gallery is also more clear. "
+		}
+		]
+	}, {
+		user: "Robin",
+		folder: "robin/WebDesign",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/RobinFrugte97/web-design/",
+		branch: "master",
+		principals: [
+		{
+			id: 6,
+			desc: "I tried to seperate all features in my site as much as possible. I have a seperate state for the landing page, filtering, searching, and watching videos."
+		},
+		{
+			id: 9,
+			desc: "I made every clickable element in my website appear as such by making it stand uit of the rest and making buttons look like real buttons, for example."
+		},
+		{
+			id: 11,
+			desc: "I tried to play with the hierarchy of the site by making the main navigation of the site relatively big. It stands out from the rest."
+		}
+		]
+	}, {
+		user: "Mees",
+		folder: "mees/preview",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/meesrutten/web-design/",
+		branch: "master",
+		principals: [
+		{
+			id: 2,
+			desc: "On first load, the zero state, the user will see an animation of a card to give awareness of it's interactiveness. If the user hovers over a card he will see it moving in depth, this effect should give the user a clue that there is more content behind or within the card. When scrolling the cards will change in depth for the same effect named above."
+		},
+		{
+			id: 14,
+			desc: "When interacting with the primary action, the card will flip or fold and reveal it's contents."
+		},
+		{
+			id: 6,
+			desc: "Every card and detailpage has only one primary button. Cards also have links to external page but all buttons are singular and primary"
+		}
+		]
+	}, {
+		user: "Leonie",
+		folder: "leonie",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/leoniesmits/web-design/",
+		branch: "master",
+		principals: [
+		{
+			id: 4,
+			desc: "Keep users in control. You don't want to overload them with information, but make the users feel like they are in complete control. The user can filter and sort everything, they can close and open all menus."
+		},
+		{
+			id: 11,
+			desc: "Strong visual hierarchies work best. The buttons are below the main navigation, the content draws the attention since that is the main focus. The filter options descend from overall to more detailed options. The filter menu is obviously less important than the content."
+		},
+		{
+			id: 14,
+			desc: "Progressive Disclosure. The number of results is shown to the user, so that they know what content they can sort and filter. Give them enough information to make choices but don't overload them."
+		}
+		]
+	}, {
+		user: "Joep",
+		folder: "joep",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/japgroevemaker/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 6,
+			desc: "As i was making the photogallery, there is one primary action per screen. You can look at the photos and when you click them you make them bigger."
+		},
+		{
+			id: 8,
+			desc: "When the user clicks on one of the buttons, the thing the user expects will happen."
+		},
+		{
+			id: 9,
+			desc: "When the user makes the photo bigger, it shows three buttons. One in the top left corner, one on the left of the photo and one on the right of the photo. These buttons don't really need explanation because they are patterns."
+		}
+		]
+	}, {
+		user: "Desley",
+		folder: "desley/ontwerp2",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/DesleyAalderink/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 6,
+			desc: "On the homepage the only primary action is clicking on the image to go to see a bigger image in the lightbox. On the lightbox the only primary action is sliding through the images."
+		},
+		{
+			id: 10,
+			desc: "Going from the homepage to the lightbox is consistent. The structure of the design stays the same. I also added a little animation where the picture goes into the lightbox, so the user won't be confused."
+		},
+		{
+			id: 11,
+			desc: "The two most important items on my website are the images and the title of the website. I made the primary focus on the images, because that's the most important content on the website. After that, the eye will go to the title of the website. For a better understanding of the website itself. The last thing is the text below the images."
+		},
+		{
+			id: 13,
+			desc: "I don't use color to determine highlights. For the clickable images I use zoom-in kind of effect."
+		}
+		]
+	}, {
+		user: "Jorik",
+		folder: "jorik/website",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/IIYAMA12/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 5,
+			desc: "Giving the user full control over the list items, by making them drag-able."
+		},
+		{
+			id: 6,
+			desc: "There is only one primary action, which is dragging and dropping items. Which reduces some cognitive load while using the interface."
+		},
+		{
+			id: 11,
+			desc: "Large titles, high colour contrast and reducing detail. To help the user with understanding how important each piece content is."
+		}
+		]
+	}, {
+		user: "Fenna",
+		folder: "fenna",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/fennadew/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "I have chosen this principle because this is one of the most important principles. This ensures that things are easier to read. You also know more quickly what things are for and what is more important. I have applied this principle by applying strong visual hierarchy to texts. For example, I chose a bold fontweight for all titles, and also a larger font size for the titles. For the normal text I have chosen a somewhat easier and lighter font-size so that it is easier to read.The images on the website take a lot of attention. This is intended to view the images as the main goal of the website. After all, it is a portfolio."
+		},
+		{
+			id: 11,
+			desc: ""
+		},
+		{
+			id: 14,
+			desc: ""
+		}
+		]
+	}, {
+		user: "Rick",
+		folder: "rick/opdracht 1",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/Rick712/web-design/",
+		branch: "master",
+		principals: [
+		{
+			id: 16,
+			desc: "The first screen is a simple zero state for when the user has no articles yet bookmarked. This page will remind you that there is yet to be a article to be bookmarked."
+		},
+		{
+			id: 1,
+			desc: "My website is very clear in what the purpose is. The user recognizes the used patters of the gallery."
+		},
+		{
+			id: 10,
+			desc: "The style in the website is consistent and recognizable for the user."
+		},
+		{
+			id: 11,
+			desc: "The content that is more important is more visually appealing to the user in size, font-weight and colour."
+		}
+		]
+	}, {
+		user: "Kevin",
+		folder: "",
+		sourceFile: "https://pure-spire-39454.herokuapp.com/intro",
+		repoUrl: "https://github.com/kyunwang/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 14,
+			desc: "he form has been divided in single actions, for good or bad, to let the user focus on the action."
+		},
+		{
+			id: 6,
+			desc: "There is only one primary action per page e.g. the form pages each have only one primary function, namely to enter information (one field)."
+		},
+		{
+			id: 11,
+			desc: "The most important have their own highlights e.g.: The input screens have their large input selections, active step number and the small next/prev button with a highlight color. On the newslist and bookmarkslist the image is really prominent and the title of the article. The header title ('Technology') is also given importantce as it is the type of articles shown."
+		}
+		]
+	}, {
+		user: "Victor",
+		folder: "victor/dist",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/velomovies/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 6,
+			desc: "There is always one primary thing you can do in each state. Show photos at the home screen; Filter the photos; Close the photo when opened."
+		},
+		{
+			id: 14,
+			desc: "The app uses a little progressive disclosure. In the filter you can choose different filter types. You can see the filters as next step but it is not already on one page."
+		},
+		{
+			id: 15,
+			desc: "The app uses a zero state. If the user sees the page for the first time it will show the user the filter options when scrolled far down."
+		}
+		]
+	}, {
+		user: "Mohammed Mulazada",
+		folder: "mo/opdracht1",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/moniac/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 8,
+			desc: "Adding a movie to a list will show the label in the top right. Since it was empty there was no need to show it."
+		},
+		{
+			id: 11,
+			desc: "Keep everything consistent and clear to the user."
+		},
+		{
+			id: 14,
+			desc: "Only show what is necessary, nothing more."
+		}
+		]
+	},
+	{
+		user: "Nour Bayard",
+		folder: "nour/opdracht1",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/nourbayard/web-design/",
+		branch: "master",
+		principals: [
+		{
+			id: 3,
+			desc: "Conserve attention at all costs. With no clutter or unnecessary stuff/design/elements in the website, attention is conserved."
+		},
+		{
+			id: 10,
+			desc: "Consistency matters. All of the same elements (like headings, containers, etc.) in the website have the same style to keep the layout consistent."
+		},
+		{
+			id: 11,
+			desc: "Strong visual hierarchies work best. "
+		}
+		]
+	}, {
+		user: "Emiel Muis",
+		folder: "emiel",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/muise001/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "The site's shopping items are the first thing you see. The second you visit the page, you know what's up"
+		},
+		{
+			id: 7,
+			desc: "The add to cart button has the most contrast on the page."
+		},
+		{
+			id: 10,
+			desc: "The website style is consistent. And the hierarchy strong"
+		}
+		]
+	}, {
+		user: "Koos",
+		folder: "koos/prod",
+		sourceFile: "index.html",
+		repoUrl: "https://github.com/hackshackshacks/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 6,
+			desc: "Progressive disclosure makes seperating primary actions easy. Every state of the form has it's own primary action."
+		},
+		{
+			id: 7,
+			desc: "The primary action of each page is highlighted using size and color. Secondary actions are clearly secondary."
+		},
+		{
+			id: 14,
+			desc: ""
+		}
+		]
+	},
+	{
+		user: "Servin",
+		folder: "servin/preview",
+		sourceFile: "index.html",
+		repoURL: "https://github.com/servinlp/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "Clarity is the first and most important job of any interface."
+		},
+		{
+			id: 10,
+			desc: ''
+		},
+		{
+			id: 11,
+			desc: ''
+		}
+		]
+	}, 
+	{
+		user: "Suus",
+		folder: "",
+		sourceFile: "http://suuscharlotte.nl/MAPPEN/webdesign/",
+		repoUrl: "https://github.com/s44s/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 11,
+			desc: "Progressive disclosure makes seperating primary actions easy. Every state of the form has it's own primary action."
+		},
+		{
+			id: 12,
+			desc: "The primary action of each page is highlighted using size and color. Secondary actions are clearly secondary."
+		},
+		{
+			id: 16,
+			desc: "I divided the form into 5 parts. Each part has it's own state. This way the user is never confronted with more input fields than necessary"
+		}
+		]
+	}, 
+	{
+		user: "Jelle",
+		folder: "",
+		sourceFile: "https://discover-movies.herokuapp.com/",
+		repoUrl: "https://github.com/jelleoverbeek/web-design",
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "Interface without distracting elements and colors. Color is only used to make interaction clear."
+		},
+		{
+			id: 5,
+			desc: "When the user selects a movie it is visible on the poster."
+		},
+		{
+			id: 14,
+			desc: "The movie discovery is seperated in multiple steps. This way the user doesn't get overwhelmed."
+		}
+		]
+	}, 
+	{
+		user: "Stijn",
+		folder: "stijn",
+		sourceFile: "index.html",
+		repoUrl: 'https://github.com/StijnHoeks/web-design',
+		branch: "master",
+		principals: [
+		{
+			id: 1,
+			desc: "Clear and easy to use"
+		},
+		{
+			id: 11,
+			desc: "User follows a natural flow"
+		},
+		{
+			id: 14,
+			desc: "Unused elements are faded out"
+		}
+		]
+	}, 
+	{
+		user: 'vandijkstef',
+		folder: 'vandijkstef',
+		sourceFile: 'index.html',
+		repoUrl: '',
+		branch: '',
+		principals: [{
+			id: 1,
+			desc: 'Text about p1'
+		}, {
+			id: 4,
+			desc: 'Text about p4'
+		}, {
+			id: 9,
+			desc: 'Text about p9'
+		}
+	]
 	}
 ]
 
@@ -309,6 +760,7 @@ const RenderStuff = () => {
 			})
 		});
 		section.appendChild(framesSection);
+		section.classList.add('item');
 		main.appendChild(section);
 		document.body.appendChild(main);
 	});

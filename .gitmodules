@@ -16,3 +16,66 @@
 [submodule "niels"]
 	path = niels
 	url = https://github.com/NielsFS/web-design
+[submodule "jamie"]
+	path = jamie
+	url = https://github.com/jajan20/web-design
+[submodule "dennis"]
+	path = dennis
+	url = https://github.com/dipsaus9/web-design
+[submodule "yoeri"]
+	path = yoeri
+	url = https://github.com/yoeripasmans/web-design
+[submodule "robin"]
+	path = robin
+	url = https://github.com/RobinFrugte97/web-design/
+[submodule "mees"]
+	path = mees
+	url = https://github.com/meesrutten/web-design/
+[submodule "leonie"]
+	path = leonie
+	url = https://github.com/leoniesmits/web-design/
+[submodule "joep"]
+	path = joep
+	url = https://github.com/japgroevemaker/web-design
+[submodule "desley"]
+	path = desley
+	url = https://github.com/DesleyAalderink/web-design
+[submodule "jorik"]
+	path = jorik
+	url = https://github.com/IIYAMA12/web-design
+[submodule "fenna"]
+	path = fenna
+	url = https://github.com/fennadew/web-design
+[submodule "rick"]
+	path = rick
+	url = https://github.com/Rick712/web-design/
+[submodule "kevin"]
+	path = kevin
+	url = https://github.com/kyunwang/web-design
+[submodule "victor"]
+	path = victor
+	url = https://github.com/velomovies/web-design
+[submodule "mo"]
+	path = mo
+	url = https://github.com/moniac/web-design
+[submodule "nour"]
+	path = nour
+	url = https://github.com/nourbayard/web-design/
+[submodule "emiel"]
+	path = emiel
+	url = https://github.com/muise001/web-design/
+[submodule "koos"]
+	path = koos
+	url = https://github.com/hackshackshacks/web-design
+[submodule "servin"]
+	path = servin
+	url = https://github.com/servinlp/web-design
+[submodule "suus"]
+	path = suus
+	url = https://github.com/s44s/web-design
+[submodule "jelle"]
+	path = jelle
+	url = https://github.com/jelleoverbeek/web-design
+[submodule "stijn"]
+	path = stijn
+	url = https://github.com/StijnHoeks/web-design
