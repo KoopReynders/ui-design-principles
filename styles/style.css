@@ -1,0 +1,36 @@
+/* iframe component */
+body * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+section h1 {
+    font-size: 44px;
+}
+
+section p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+section div iframe {
+    border: 0;
+    max-width: 100%;
+}
+main section section {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+main > section {
+    margin: 8rem 0;
+}
